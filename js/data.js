@@ -35,7 +35,7 @@ const createComment = () => ({
 //Функция строитель для конечного массива
 const createPhoto = (_,i) => ({
   id: i + 1,
-  url: `photos/${i + 1}`,
+  url: `photos/${i + 1}.jpg`,
   description: `Описание${i + 1}`,
   likes: getRandomNumber(15, 200),
   comments: Array.from({length:getRandomNumber(1,10)}, createComment)
